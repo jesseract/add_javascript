@@ -28,3 +28,10 @@ function hideSection() {
   last.style.display = "none";
   }
 }
+
+function showLastRow() {
+  var gradeList = document.getElementById("grade_list")
+  if(grade_list != null) {
+    gradeList.lastElementChild.style.display = "block";
+  }
+}
