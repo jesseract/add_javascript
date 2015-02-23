@@ -14,3 +14,17 @@
 //= require jquery_ujs
 //= require d3
 //= require_tree .
+
+function disableButton() {
+  var button = document.getElementById("update_course_button");
+  button.disabled = true;
+  document.getElementById("edit_course_1").submit();
+}
+
+function hideSection() {
+  var section = document.getElementById("grade_list");
+  if (section != null) {
+  var last = section.lastElementChild;
+  last.style.display = "none";
+  }
+}
