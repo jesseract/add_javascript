@@ -35,3 +35,8 @@ function showLastRow() {
     gradeList.lastElementChild.style.display = "block";
   }
 }
+
+function deleteHidesRow(button) {
+  parentDiv = button.parentNode.parentNode.parentNode
+  parentDiv.style.display = "none"
+}
